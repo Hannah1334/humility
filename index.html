@@ -1,0 +1,350 @@
+<style>
+
+body{
+background-image: url('https://i.imgur.com/W4C7ur0.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+background-color:#000000;
+}
+
+::-webkit-scrollbar {width: 3px; height: 3px;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {background: #666666;}
+
+#picbox1 {
+position:absolute;
+border:1px solid #fcf151;
+width:25%;
+height:30%;
+top:5%;
+left:2.5%;
+background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2014/03/fireflies-4.gif') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#picbox1:hover {
+background-image: url('https://i.imgur.com/b5z4l3v.jpg') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#title {
+position:absolute;
+width:25%;
+height:7%;
+top:38%;
+left:2.5%;
+text-align:center;
+font-family:Satisfy;
+font-size:150%;
+background-image: -webkit-linear-gradient(left, #ffffff, #fcf151, #ffffff);
+background-image:         linear-gradient(to right, #ffffff, #fcf151, #ffffff);
+color:transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+
+#basicbox {
+position:absolute;
+overflow:auto;
+padding:2%;
+border:1px solid #fcf151;
+background-color:#000000;
+width:21.2%;
+height:18%;
+top:45%;
+left:2.5%;
+color:#ffffff;
+font-size:80%;
+font-family:Poiret One;
+text-align:center;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#basicbox:hover {
+-webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1 {
+position:absolute;
+border:1px solid #fcf151;
+border-radius:100%;
+width:10%;
+height:20%;
+top:75%;
+left:2.5%;
+background-image: url('https://i.imgur.com/3x5b4B0.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover {
+-webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2 {
+position:absolute;
+border:1px solid #fcf151;
+border-radius:100%;
+width:10%;
+height:20%;
+top:75%;
+left:18%;
+background-image: url('https://i.imgur.com/JnJVvJT.png') !important; 
+background-repeat:no-repeat !important; 
+background-position:center !important; 
+background-size:cover;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox2:hover {
+-webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs{
+display:block;
+border:1px solid #fcf151;
+opacity:0;
+width:99%;
+height:99%;
+margin-top:0%;
+margin-left:0%;
+text-align:center;
+background-color:#000000;
+color: #ffffff;
+font-family:Satisfy;
+font-size:130%;
+line-height:700%;
+border-radius:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+.tabs:hover {
+opacity:1;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
+display: none;
+}
+
+#bigbox {
+position:absolute;
+border:1px solid #fcf151;
+background-color:#000000;
+width:67.5%;
+height:90%;
+top:5%;
+left:30%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#bigbox:hover {
+-webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabtitle {
+position:absolute;
+width:90%;
+height:10%;
+top:7%;
+left:5%;
+border-bottom: 1px dashed #fcf151;
+text-align:center;
+font-size:200%;
+color:#ffffff;
+font-family:Philosopher;
+text-transform:uppercase;
+}
+
+#tabpic {
+position:absolute;
+width:40%;
+height:73%;
+top:20%;
+left:5%;
+}
+
+#content {
+position:absolute;
+overflow:auto;
+padding:2%;
+width:41%;
+height:66.8%;
+top:20%;
+left:50%;
+color:#ffffff;
+font-family:Poiret One;
+font-size:80%;
+}
+
+#line {
+position:absolute;
+border-left:1px dashed #fcf151;
+height:73%;
+top:20%;
+width:1%;
+left:47.4%;
+}
+
+a {
+color:#888888;
+}
+
+i {
+color:#888888;
+font-size:100%;
+}
+
+h1 {
+color: #fcf151;
+font-family: Philosopher;
+text-align:center;
+font-size: 100%;
+letter-spacing:3px;
+border-bottom: 1px solid #cccccc;
+}
+
+b {
+font-size: 100%;
+color:#fcf151;
+text-transform: uppercase;
+font-family:Philosopher;
+}
+
+</style>
+
+<style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur836.cur), auto !important;}</style>
+<link href="https://fonts.googleapis.com/css?family=Philosopher|Poiret+One|Satisfy" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('tabpic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('tabtitle').innerHTML=document.getElementById(id).innerHTML}</script>
+
+<div id="picbox1">
+</div>
+<div id="title">
+The Virtue of Humility: Radiant Joy
+</div>
+<div id="basicbox">
+<h1>Basic Information</h1>
+<b>Name:</b> Joy Matthews<br>
+<b>Age:</b> Unknown<br>
+<b>Virtue:</b> Humility<br>
+<b>Gender:</b> Female<br>
+<b>Sexuality:</b> Demisexual<br>
+<b>Race:</b> Saint (Immortal)
+</div>
+<div id="tabbox1">
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3')">History</span>
+</div>
+<div id="tabbox2">
+<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation1 ('tab5');changeNavigation2 ('tab6')">Abilities</span>
+</div>
+
+<div id="bigbox">
+<div id="tabtitle">
+Detailed Information
+</div>
+<div id="tabpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/qTO9wTB.png"/>
+</div>
+<div id="line">
+</div>
+<div id="content">
+<b>Appearance</b><br>
+<i>Height:</i> 5'8"<br>
+<i>Weight:</i> 125 lbs.<br>
+The embodiment of Humility is a very slender and dainty individual. Her height is fairly average for human females, and her physique is very much akin to what most would imagine to be fitting for a "princess" or even a "damsel in distress." She possesses the same signature hourglass figure shared by a majority of females, and even though her attributes aren't necessarily voluptuous in comparison to other women, the bumps and bulges are shapely against her own build, giving the illusion of being well endowed. Joy's flesh is darkened to an olive tan thanks to her many days of work under a bright sun, but has no blemish or mark save for very faint freckles splashed over her nose and cheeks. Her facial features are very young, with full pink lips, a cute ever so slightly upturned button nose, and big beautiful eyes that glisten a bright amber and crinkle around their edges when she smiles in a fashion that can be considered motherly. Slender golden brows, and a head of very long silky locks of golden hair that seems to give off a barely noticeable glow as though light itself has been caught in the strands, do well to accentuate the regal lines of her angular jaw and high cheekbones.
+<br><br>
+<b>Attire</b><br>
+As dictated by the culture of her Kingdom, Joy is required to wear minimalistic clothing, the only exception to this rule is during special events or ritualistic ceremonies. When she is dressed casually, Humility can typically be found in long flowing white gowns remniscent of Greek and Roman style togas, with either bare feet or simplistic leather sandals. If she wishes to decorate herself in any way, she must do so with whatever the natural environment provides for her, often leading to her wearing a headband of flowers woven by her own hands.
+<br>
+Should a special event arise her attire is much more reflective of what would be expected for a priestess: long white hooded robes, simplistic blessed charms around her ankles, wrists, and neck, as well as very small amounts of gold glitter dusted over her eyelids. The robes may vary depending on the event in which she is required to wear them, and will be described in detail during the role-play should the need arise.
+<br><br>
+<b>Personality</b><br>
+Joy very strongly reflects the Virtue she embodies. She is humble above all else, thankful in all things and always passing focus, gratitude, or even credit away from herself and onto candidates she feels more worthy. Hesitation is shown when faced with controversial decisions, preferring to ask the advice of those around her rather than depend entirely on her own judgement. Often perceived as shy, she is mostly just quiet, strongly believing that everyone else deserves a say before she should open her own mouth. Unfortunately this also opens the naive Virtue to the strong possibility of being manipulated and taken advantage of; she is too easily swayed to a cause, if it can be proved beneficial to humanity in general.
+</div>
+</div>
+
+<div id="tab1">
+The Kingdom in which Humility reigns supreme works in a very particular manner. While they do have a history of Kings and Queens, such a role is nothing more than a title, an act of publicity to appear strong on the outside. Within their own territory, their strength comes from a sense of community, with a legal system designed entirely around supporting and helping their population as a whole, rather than the individual. A group of priests and priestesses act as politicians, representing their different cities and factions, and voting on day to day laws or ordeals. Every so often, their current King or Queen’s life ends for one reason or another (a very rare instance, given that the Saints who are required to take the title of ruler are gifted with Immortality) resulting in a celebration of life and death where random eligible males and females are selected from the general masses. They “compete” while their people vote for whom they desire to see become the next monarch.
+<br><br>
+Joy Matthews was just your average young woman. Granted, she did have an immaculate natural beauty to her, was known to be compassionate and sweet, and possessed very high academic scores, but there was nothing inherently special about her. When candidacy was requested of her, she did not expect to win, but just being an option was such a huge honor she found herself unable to refuse. Once the shock and euphoria that came with being chosen to become the next Virtue of Humility subsided, Joy was forced to say goodbye to her friends and family, before being carted off to the so-called “Castle” where she would ascend. Rather than an actual palace, the Priests, Priestesses, and their acting Monarch, lived together in a monastery-like community of small temples and homes. It was here that the next candidate was subjected to extreme training, any aspects of her personality and nature forcefully worn away until she was a perfect reflection of the Virtue she was destined to become even as a base human. After passing all of their tests and proving herself ready, Joy was sacrificed on a Holy Altar. Much like the Savior figure depicted in Christianity, she was wrapped and buried, only to rise on the third day after her death as an Immortal Saint.
+<br><br>
+Many long years have passed since her resurrection, and to this day she remains Queen Joy, the Radiant Virtue of Humility, who serves her people in any way she possibly can through devoted acts of faith and charity. Her training still continues, as the newfound powers she has must be mastered, but there is plenty of opportunity for her to practice; a Healer is always desperately needed among the fragile race that is mankind. More opportunities for seeking means of practicing her other talents have come to her attention, through the prayers of a man known as Geeohdi. He seeks her aid--and the aid of the other Virtues--in bringing down the escaped Deadly Sins. Knowing she is leaving her people in good hands, Joy does not refuse his cry for help…
+<br><br>
+...And so our story begins.
+</div>
+<div id="tab2">
+<img style="width:100%;margin-top:10%;" src="https://i.imgur.com/8OURtt3.png"/>
+</div>
+<div id="tab3">
+Her Story Thus Far
+</div>
+
+<div id="tab4">
+<b>Fighting Style:</b><br>Defensive<br><br>
+<i>Light of Holy Sanctuary</i><br>
+Joy can gather light from various other sources (assuming there are sources around her to draw from, whether it be sunlight, moonlight, starlight, candlelight, etc) and use it in its raw condensed form to act as a source of illumination in darkness. Should she spend time channeling the light through herself as though she were some kind of holy prayer filter, she can supercharge its purity with praise and give it a solid tangible form that can be shaped as she so chooses, and trades any sense of offensive ability or intent to instead use this purified substance as a healing energy. If enough time, energy, and light is provided then any wound can eventually be healed through these means. While this tactic can be used on the Sins, for them it would be an unintentionally excruciating process given the holy nature of her ability.
+<br><br>
+<i>Aegis of the Blessed</i><br>
+A protector and supporter, but never a means of offensive action, the Virtue of Humility is in technicality a pacifist. Her energy exceeds in its defensive qualities and can manifest in physical forms, specifically as powerful barriers, wards, and shields meant to counter an aggressor rather than do any intentional harm. Being still considered the energy of a holy maiden, these barriers are especially effective when it comes to warding off evil. They can act as buffers against the physical and intangible “attacks” from those with ill intent, whether they be aimed at the mind or the body, effectively allowing her to create “safe spaces” outside of sinful influence.
+<br><br>
+<i>Divine Intervention</i><br>
+Always willing to fade into the background and offer support, in addition to the acts of healing and providing protection, Joy is also very adept in providing support for her allies and peers through the act of prayer. Her strong faith in the abilities of her allies--confirmed by spoken chants and ritualistic songs--can be saturated with the physicality of her holy essence and provide them with temporary but lasting boosts in their base physical abilities. The particular boons she can provide are limited to the style, action, and intent of the person being blessed, and only one can be active on a different individual at a time.
+<br>
+(Example: Someone actively in the middle of throwing a punch while being prayed for to activate Divine Intervention would receive a buff to their physical strength allowing them to hit twice as fast and hard as they normally would. Things of that nature.)
+</div>
+<div id="tab5">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/z97S8JQ.png"/>
+</div>
+<div id="tab6">
+The Powers of a Holy Virtue
+</div>
