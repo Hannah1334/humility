@@ -1,3 +1,5 @@
+<script language=javascript>document.title=("j σ ч") </script>
+
 <script>resizeTo(screen.availWidth, screen.availHeight);</script>
 
 <style>
@@ -12,102 +14,100 @@ background-color:#000000;
 
 ::-webkit-scrollbar {width: 3px; height: 3px;}
 ::-webkit-scrollbar-track {background: none;}
-::-webkit-scrollbar-thumb {background: #fcf151;}
+::-webkit-scrollbar-thumb {background: #FFC716;}
 
-#picbox1 {
+#bannerpic {
 position:absolute;
-border:1px solid #fcf151;
-width:25%;
+width:60%;
 height:30%;
-top:5%;
-left:2.5%;
-background-image: url('http://www.thisiscolossal.com/wp-content/uploads/2014/03/fireflies-4.gif') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#picbox1:hover {
-background-image: url('https://i.imgur.com/b5z4l3v.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
+top:10%;
+left:20%;
 }
 
 #title {
 position:absolute;
-width:25%;
-height:7%;
-top:38%;
-left:2.5%;
+width:39%;
+height:6%;
+top:32%;
+left:41%;
+font-family: 'Merienda', cursive;
+color:#FFFFFF;
 text-align:center;
-font-family:Satisfy;
-font-size:3vh;
-background-image: -webkit-linear-gradient(left, #ffffff, #fcf151, #ffffff);
-background-image:         linear-gradient(to right, #ffffff, #fcf151, #ffffff);
-color:transparent;
--webkit-background-clip: text;
-background-clip: text;
+font-size:3.2vh;
+line-height:2;
+letter-spacing:3px;
+text-shadow: 2px 2px 3px #D48300;
 }
 
-#basicbox {
+#mainbox {
 position:absolute;
-overflow:auto;
-padding:2%;
-border:1px solid #fcf151;
 background-color:#000000;
-width:21.2%;
-height:18%;
-top:45%;
-left:2.5%;
-color:#ffffff;
-font-size:1.7vh;
-font-family:Poiret One;
-text-align:center;
+width:60%;
+height:50%;
+top:40%;
+left:20%;
+}
+
+#smallpicbox {
+position:absolute;
+background-color:#FFC716;
+padding:0.5%;
+width:7%;
+height:14%;
+top:32%;
+left:21%;
+}
+
+#smallpic {
+position:absolute;
+padding:0.5%;
+width:7%;
+height:14%;
+top:32%;
+left:21%;
+}
+
+#hiddensmallpic {
+position:absolute;
+opacity:0;
+padding:0.5%;
+width:7%;
+height:14%;
+top:32%;
+left:21%;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
 }
 
-#basicbox:hover {
--webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+#hiddensmallpic:hover {
+opacity:1;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
+}
+
+#tabarea {
+position:absolute;
+background-color:#FFEC40;
+width:60%;
+height:3%;
+top:38%;
+left:20%;
 }
 
 #tabbox1 {
 position:absolute;
-border:1px solid #fcf151;
-border-radius:100%;
-width:10%;
-height:20.5%;
-top:75%;
-left:2.5%;
-background-image: url('https://i.imgur.com/ruI5Afu.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox1:hover {
--webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
+width:9%;
+height:3%;
+top:38%;
+left:30%;
+color:#000000;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Assistant', sans-serif;
+text-transform:uppercase;
+line-height:2;
 -webkit-transition: all 0.8s ease-out;
 -moz-transition: all 0.8s ease-out;
 transition: all 0.8s ease-out;
@@ -115,241 +115,425 @@ transition: all 0.8s ease-out;
 
 #tabbox2 {
 position:absolute;
-border:1px solid #fcf151;
-border-radius:100%;
-width:10%;
-height:20.5%;
-top:75%;
-left:18%;
-background-image: url('https://i.imgur.com/Qo2R0Bx.jpg') !important; 
-background-repeat:no-repeat !important; 
-background-position:center !important; 
-background-size:cover;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabbox2:hover {
--webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-.tabs{
-display:block;
-border:1px solid #fcf151;
-opacity:0;
-width:95%;
-height:95%;
-margin-top:2%;
-margin-left:2.2%;
+width:9%;
+height:3%;
+top:38%;
+left:40%;
+color:#000000;
 text-align:center;
-background-color:#000000;
-color: #ffffff;
-font-family:Satisfy;
-font-size:3vh;
-line-height:6;
-border-radius:100%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-.tabs:hover {
-opacity:1;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tab1,#tab2,#tab3,#tab4,#tab5,#tab6 {
-display: none;
-}
-
-#bigbox {
-position:absolute;
-border:1px solid #fcf151;
-background-color:#000000;
-width:67.5%;
-height:90%;
-top:5%;
-left:30%;
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#bigbox:hover {
--webkit-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--moz-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
-box-shadow: 0px 0px 13px 3px rgba(252,241,81,1);
--webkit-transition: all 0.8s ease-out;
--moz-transition: all 0.8s ease-out;
-transition: all 0.8s ease-out;
-}
-
-#tabtitle {
-position:absolute;
-width:90%;
-height:10%;
-top:7%;
-left:5%;
-border-bottom: 1px dashed #fcf151;
-text-align:center;
-font-size:4vh;
-color:#ffffff;
-font-family:Philosopher;
+font-size:1.5vh;
+font-family: 'Assistant', sans-serif;
 text-transform:uppercase;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
-#tabpic {
+#tabbox3 {
 position:absolute;
-width:40%;
-height:73%;
-top:20%;
-left:5%;
+width:9%;
+height:3%;
+top:38%;
+left:50%;
+color:#000000;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Assistant', sans-serif;
+text-transform:uppercase;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox4 {
+position:absolute;
+width:9%;
+height:3%;
+top:38%;
+left:60%;
+color:#000000;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Assistant', sans-serif;
+text-transform:uppercase;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox5 {
+position:absolute;
+width:9%;
+height:3%;
+top:38%;
+left:70%;
+color:#000000;
+text-align:center;
+font-size:1.5vh;
+font-family: 'Assistant', sans-serif;
+text-transform:uppercase;
+line-height:2;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#tabbox1:hover,#tabbox2:hover,#tabbox3:hover,#tabbox4:hover,#tabbox5:hover {
+background-color:#FFC716;
+color:#FFFFFF;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+#stat1 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:30%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat2 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:37%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat3 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:44%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat4 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:51%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat5 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:58%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat6 {
+position:absolute;
+width:6%; 
+height:5%;
+top:43%;
+left:65%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#stat7 {
+position:absolute;
+width:7%; 
+height:5%;
+top:43%;
+left:72%;
+text-align:center;
+font-size:1.5vh;
+color:#FFFFFF;
+font-family: 'Assistant', sans-serif;
+}
+
+#rulesholder {
+position:absolute; 
+background-color:#FFFF98;
+padding:1%;
+width:12%;
+height:34%;
+top:50%;
+left:21%;
+}
+
+#rules {
+position:absolute; 
+background-color:#FFFFFF;
+border:1px dashed #E09200;
+overflow:auto;
+padding:1%;
+width:10%;
+height:30%;
+top:52%;
+left:22%;
+text-align:justify;
+font-size:1.2vh;
+color:#000000;
+font-family: 'Assistant', sans-serif;
+}
+
+#contentholder {
+position:absolute; 
+background-color:#FFFF98;
+padding:1%;
+width:23%;
+height:34%;
+top:50%;
+left:36%;
 }
 
 #content {
-position:absolute;
+position:absolute; 
+background-color:#FFFFFF;
+border:1px dashed #E09200;
 overflow:auto;
-padding:2%;
-width:41%;
-height:66.8%;
-top:20%;
-left:50%;
-color:#ffffff;
-font-family:Poiret One;
+padding:1%;
+width:21%;
+height:30%;
+top:52%;
+left:37%;
+text-align:justify;
 font-size:1.5vh;
+color:#000000;
+font-family: 'Assistant', sans-serif;
 }
 
-#line {
-position:absolute;
-border-left:1px dashed #fcf151;
-height:73%;
-top:20%;
-width:1%;
-left:47.4%;
+#pic {
+position:absolute; 
+background-color:#FFFF98;
+padding:1%;
+width:15%;
+height:34%;
+top:50%;
+left:62%;
+}
+
+#tab1,#tab2,#tab3,#tab4,#tab5,#tab6,#tab7,#tab8,#tab9,#tab10,#tab11,#tab12,#tab13,#tab14,#tab15,#tab16,#tab17,#tab18,#tab19,#tab20 {
+display:none;
+}
+
+.tabs {
+display:block;
+width:100%;
+height:100%;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 a {
-color:#888888;
+color:#666666;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
+}
+
+a:hover {
+color:#FFC716;
+-webkit-transition: all 0.8s ease-out;
+-moz-transition: all 0.8s ease-out;
+transition: all 0.8s ease-out;
 }
 
 i {
-color:#888888;
-font-size:100%;
+color:#999999;
 }
 
 h1 {
-color: #fcf151;
-font-family: Philosopher;
+color: #000000;
+font-family: 'Merienda', cursive;
 text-align:center;
-font-size: 100%;
-letter-spacing:3px;
-border-bottom: 1px solid #cccccc;
+font-size: 2vh;
+border-bottom: 3px solid #FFC716;
+background-color:#FFEC40;
 }
 
 b {
-font-size: 100%;
-color:#fcf151;
+font-size:1.8vh;
+color:#FFC716;
 text-transform: uppercase;
-font-family:Philosopher;
+font-family: 'Teko', sans-serif;
 }
 
 </style>
 
 <style type="text/css">* {cursor: url(http://cur.cursors-4u.net/cursors/cur-9/cur836.cur), auto !important;}</style>
-<link href="https://fonts.googleapis.com/css?family=Philosopher|Poiret+One|Satisfy" rel="stylesheet">
-<script>function changeNavigation(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation1(id) {document.getElementById('tabpic').innerHTML=document.getElementById(id).innerHTML}</script>
-<script>function changeNavigation2(id) {document.getElementById('tabtitle').innerHTML=document.getElementById(id).innerHTML}</script>
+<link href="https://fonts.googleapis.com/css?family=Assistant|Merienda|Teko" rel="stylesheet">
+<script>function changeNavigation(id) {document.getElementById('bannerpic').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation1(id) {document.getElementById('title').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation2(id) {document.getElementById('content').innerHTML=document.getElementById(id).innerHTML}</script>
+<script>function changeNavigation3(id) {document.getElementById('pic').innerHTML=document.getElementById(id).innerHTML}</script>
 
-<div id="picbox1">
+<div id="bannerpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/UDKWXbs.png"/>
 </div>
 <div id="title">
-Priestess of Apollo: Radiant Joy
+Erena's Newest Vessel
 </div>
-<div id="basicbox">
-<h1>Basic Information</h1>
-<b>Name:</b> Joy<br>
-<b>Age:</b> Mid/Late Twenties<br>
-<b>Gender:</b> Female<br>
-<b>Sexuality:</b> Demisexual<br>
-<b>Race:</b> Saint (Immortal)<br>
-<b>Occupation:</b> Saint of Sunlight
+<div id="mainbox"></div>
+<div id="smallpicbox"></div>
+<div id="tabarea"></div>
+<div id="smallpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/TH8uuBy.png"/>
+</div>
+<div id="hiddensmallpic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/508z3gd.png"/>
 </div>
 <div id="tabbox1">
-<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3')">History</span>
+<span class="tabs" onClick="changeNavigation ('tab1');changeNavigation1 ('tab2');changeNavigation2 ('tab3');changeNavigation3 ('tab4')">Details</span>
 </div>
 <div id="tabbox2">
-<span class="tabs" onClick="changeNavigation ('tab4');changeNavigation1 ('tab5');changeNavigation2 ('tab6')">Abilities</span>
+<span class="tabs" onClick="changeNavigation ('tab5');changeNavigation1 ('tab6');changeNavigation2 ('tab7');changeNavigation3 ('tab8')">Lore</span>
 </div>
-
-<div id="bigbox">
-<div id="tabtitle">
-Detailed Information
+<div id="tabbox3">
+<span class="tabs" onClick="changeNavigation ('tab9');changeNavigation1 ('tab10');changeNavigation2 ('tab11');changeNavigation3 ('tab12')">History</span>
 </div>
-<div id="tabpic">
-<img style="width:100%;margin-top:10%;" src="https://i.imgur.com/kGbeZgh.jpg"/>
+<div id="tabbox4">
+<span class="tabs" onClick="changeNavigation ('tab13');changeNavigation1 ('tab14');changeNavigation2 ('tab15');changeNavigation3 ('tab16')">Inventory</span>
 </div>
-<div id="line">
+<div id="tabbox5">
+<span class="tabs" onClick="changeNavigation ('tab17');changeNavigation1 ('tab18');changeNavigation2 ('tab19');changeNavigation3 ('tab20')">Abilities</span>
 </div>
+<div id="stat1">
+<b>Human Name:</b><br>Joy
+</div>
+<div id="stat2">
+<b>Physical Age:</b><br>Mid Twenties
+</div>
+<div id="stat3">
+<b>Gender:</b><br>Female
+</div>
+<div id="stat4">
+<b>Orientation:</b><br>Demisexual
+</div>
+<div id="stat5">
+<b>Species:</b><br>Human
+</div>
+<div id="stat6">
+<b>Race:</b><br>Deity's Vessel
+</div>
+<div id="stat7">
+<b>Height // Weight:</b><br>5'8" // 125 lbs.
+</div>
+<div id="rulesholder"></div>
+<div id="rules">
+<h1>Personal Rules</h1>
+I know, anyone who's bothered to enable flash and have a look at this character sheet is probably rolling their eyes about now. Don't worry I'm not fragile enough to just block people who don't follow these rules, they're more like guidelines or shared tidbits of information to help you know what kind of role-player I am before you invest any time into building a story with me. These rules are for the sake of our mutual enjoyment, if they're not abided by then absolute worst case scenario would be that I lose interest in the role-play and let you know I'd rather not post to it anymore. Anyway let's get on with what my terms actually are!
+<br><br>
+<li><b>1.</b> Group links are welcome! I'm not going to visit much if there's no actual role-play going on and it's just a bunch of nothing but O.O.C. conversation though. Nothing against the group owners or other members that frequent the chat, just an individual with limited time who'd prefer to spend it elsewhere if nothing's happening.</li>
+<li><b>2.</b> I always <i>prefer</i> to talk about plot and stuff before jumping right into a role-play, but random starters are still welcome, I'm not that picky.</li>
+<li><b>3.</b> I am <i>not</i> interested in romance, cyber, or erotic role-play. Most of my characters are spoken for regardless, but I prefer to leave them spoken for with the characters of the person I'm actually with. A personal preference by all means, but one I'm not going to change. There's plenty of other girls around that would be willing to stroke your e-peen or e-vagine, I'm just not one of them. All other kinds of adult subjects though? Open game.</li>
+<li><b>4.</b> My replies will be slow more often than not. If you're going to expect me to drop everything and respond with a post as soon as you send one then I'm sorry but I'm not the partner for you. I have a life that takes priority and other activities I find more fun. I won't just stop responding altogether out of nowhere (unless there's a really good reason for it) but my world doesn't revolve around you, I'm liable to take my sweet time and do as I please, or get other important stuff done, before writing up another post for you. If that's acceptable and you're still willing to role-play with me then awesome! Congrats, you're one of the few people left around here that's not super self entitled, give yourself a pat on the back. ♥</li>
+<li><b>5.</b> I'm not against role-players who post in single sentences and few words, but I'm afraid I won't be doing any role-play with you if you fall into that category. Sorry, it just bores me personally so I'd rather not partake in it. I really like posting to para length and anything above, I usually do multi para myself. All that being said I don't expect my partners to match my post length, if you're more comfortable with just three or so sentences then great, I'll probably still do a couple of paragraphs because it's my style, but you don't have to feel pressured to produce the same amount.</li>
+<br><br>
+And that about sums it all up. Feel free to approach me, I'm down to just chat, even game. No messages are a bother, really, can't wait to see you around!
+</div>
+<div id="contentholder"></div>
 <div id="content">
-<b>Appearance</b><br>
-<i>Height:</i> 5'8"<br>
-<i>Weight:</i> 125 lbs.<br>
-The embodiment of Humility is a very slender and dainty individual. Her height is fairly average for human females, and her physique is very much akin to what most would imagine to be fitting for a "princess" or even a "damsel in distress." She possesses the same signature hourglass figure shared by a majority of females, and even though her attributes aren't necessarily voluptuous in comparison to other women, the bumps and bulges are shapely against her own build, giving the illusion of being well endowed. Joy's flesh is darkened to an olive tan thanks to her many days of work under a bright sun, but has no blemish or mark save for very faint freckles splashed over her nose and cheeks. Her facial features are very young, with full pink lips, a cute ever so slightly upturned button nose, and big beautiful eyes that glisten a bright amber and crinkle around their edges when she smiles in a fashion that can be considered motherly. Slender golden brows, and a head of very long silky locks of golden hair that seems to give off a barely noticeable glow as though light itself has been caught in the strands, do well to accentuate the regal lines of her angular jaw and high cheekbones.
+<h1>Appearance</h1>
 <br><br>
-<b>Attire</b><br>
-As dictated by the culture of her Kingdom, Joy is required to wear minimalistic clothing, the only exception to this rule is during special events or ritualistic ceremonies. When she is dressed casually, Humility can typically be found in long flowing white gowns remniscent of Greek and Roman style togas, with either bare feet or simplistic leather sandals. If she wishes to decorate herself in any way, she must do so with whatever the natural environment provides for her, often leading to her wearing a headband of flowers woven by her own hands.
-<br>
-Should a special event arise her attire is much more reflective of what would be expected for a priestess: long white hooded robes, simplistic blessed charms around her ankles, wrists, and neck, as well as very small amounts of gold glitter dusted over her eyelids. The robes may vary depending on the event in which she is required to wear them, and will be described in detail during the role-play should the need arise.
-<br><br>
-<b>Personality</b><br>
-Joy very strongly reflects the Virtue she embodies. She is humble above all else, thankful in all things and always passing focus, gratitude, or even credit away from herself and onto candidates she feels more worthy. Hesitation is shown when faced with controversial decisions, preferring to ask the advice of those around her rather than depend entirely on her own judgement. Often perceived as shy, she is mostly just quiet, strongly believing that everyone else deserves a say before she should open her own mouth. Unfortunately this also opens the naive Virtue to the strong possibility of being manipulated and taken advantage of; she is too easily swayed to a cause, if it can be proved beneficial to humanity in general.
+<h1>Personality</h1>
 </div>
+<div id="pic">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/YHl9eHc.png"/>
 </div>
 
 <div id="tab1">
-Under re-work, a vast majority of this character is. I'll be keeping a lot of the same base ideas, but changing up things like her place of origin, her abilities, and such. This is quite the task and may be a work in progress for a long time, please bear with me. For now I will leave a good chunk of information the same and start most of the rehaul from her backstory, then progress my way through other things. I apologize in advance if some information contradicts others, that simply means I haven't gotten to reworking that part yet. Thank you.
+<img style="width:100%;height:100%;" src="https://i.imgur.com/UDKWXbs.png"/>
 </div>
 <div id="tab2">
-<img style="height:100%;margin-left:13%;" src="https://i.imgur.com/0fm26SL.jpg"/>
+Erena's Newest Vessel
 </div>
 <div id="tab3">
-Her Story Thus Far
+<h1>Appearance</h1>
+<br><br>
+<h1>Personality</h1>
+</div>
+<div id="tab4">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/YHl9eHc.png"/>
 </div>
 
-<div id="tab4">
-<b>Fighting Style:</b><br>Defensive<br><br>
-<i>Light of Holy Sanctuary</i><br>
-Joy can gather light from various other sources (assuming there are sources around her to draw from, whether it be sunlight, moonlight, starlight, candlelight, etc) and use it in its raw condensed form to act as a source of illumination in darkness. Should she spend time channeling the light through herself as though she were some kind of holy prayer filter, she can supercharge its purity with praise and give it a solid tangible form that can be shaped as she so chooses, and trades any sense of offensive ability or intent to instead use this purified substance as a healing energy. If enough time, energy, and light is provided then any wound can eventually be healed through these means. While this tactic can be used on the Sins, for them it would be an unintentionally excruciating process given the holy nature of her ability.
-<br><br>
-<i>Aegis of the Blessed</i><br>
-A protector and supporter, but never a means of offensive action, the Virtue of Humility is in technicality a pacifist. Her energy exceeds in its defensive qualities and can manifest in physical forms, specifically as powerful barriers, wards, and shields meant to counter an aggressor rather than do any intentional harm. Being still considered the energy of a holy maiden, these barriers are especially effective when it comes to warding off evil. They can act as buffers against the physical and intangible “attacks” from those with ill intent, whether they be aimed at the mind or the body, effectively allowing her to create “safe spaces” outside of sinful influence.
-<br><br>
-<i>Divine Intervention</i><br>
-Always willing to fade into the background and offer support, in addition to the acts of healing and providing protection, Joy is also very adept in providing support for her allies and peers through the act of prayer. Her strong faith in the abilities of her allies--confirmed by spoken chants and ritualistic songs--can be saturated with the physicality of her holy essence and provide them with temporary but lasting boosts in their base physical abilities. The particular boons she can provide are limited to the style, action, and intent of the person being blessed, and only one can be active on a different individual at a time.
-<br>
-(Example: Someone actively in the middle of throwing a punch while being prayed for to activate Divine Intervention would receive a buff to their physical strength allowing them to hit twice as fast and hard as they normally would. Things of that nature.)
-<br><br>
-<i>Divine Projection: Wyvern-Hearted</i><br>
-A far more advanced form of her ability to manifest her own energy into physical wards of protection, requiring a lot more power and ultimately a heavy strain on physically and spiritually. Divine Projection allows Joy to embrace her “spirit animal” and use the inherently protective solid form of her energy to create an intricate aura in the shape of that creature around her body; in this case, the creature in question is a Wyvern. Visually it is very draconic in nature, with big wings replacing what most upright creatures would have as arms, and only two legs, attached to a burly body with a long neck and tail. The Wyvern is only a construct and acts like an extension of Joy herself, it doesn’t have a mind or consciousness of its own and operates like a second body to her specifically. When it is active she remains stationary inside of its “chest” area where a heart would be if the creature were real. The energy that makes up its exterior is golden but translucent, allowing anyone to see very easily that it’s nothing more than a construct of energy and that a person controlling it resides inside.
-<br>
-From the end of its nose to the tip of its tail, the Projection is roughly twenty five feet in length, and even when stretching out its neck it only stands at roughly eleven feet in height. Its wingspan is fairly massive, both wings together measuring fifty feet at the most when stretched as far as they can go, although keeping balance on the ground requires the wings to be folded so they’re not useful for much other than flying or thrusting out in a desperate attempt to protect a comrade. Even as an energy construct this form is very heavy, making it harder to knock over or away, but as a result making it slower (on land) and a huge strain to fly for long periods of time. Whenever this ability is used, deactivation requires a cooldown so Humility can rest and recuperate, otherwise she’d wear herself down straight to death.
-<br>
-The Wyvern is capable of carrying up to four people (at the most) on its back, although the more people the heavier her load, and flying at impressive speeds through the air assuming she remains at a decent elevation. Its clawed feet can be used for picking things up or tearing through things, but its main benefit (other than transportation) is that it still behaves like a big moving barrier allowing some protection from physical attacks. Joy can also amplify a scream through its mouth like a roar, although this has no effect save for making a lot of noise to either alert others to her presence or call for help.
-</div>
 <div id="tab5">
-<img style="width:100%;height:100%;" src="https://i.imgur.com/z97S8JQ.png"/>
+<img style="width:100%;height:100%;" src="https://i.imgur.com/44J0HD3.png"/>
 </div>
 <div id="tab6">
-The Powers of a Priestess
+The Legend of Erena
+</div>
+<div id="tab7">
+<h1>Rise of a Goddess</h1>
+</div>
+<div id="tab8">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/Mg1HOq7.png"/>
+</div>
+
+<div id="tab9">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/vBgCfxI.png"/>
+</div>
+<div id="tab10">
+The Path of Radiant Joy
+</div>
+<div id="tab11">
+<h1>Birth & Early Life</h1>
+</div>
+<div id="tab12">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/7F7oJFj.png"/>
+</div>
+
+<div id="tab13">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/OvzxFu2.png"/>
+</div>
+<div id="tab14">
+Goddess' Equipment
+</div>
+<div id="tab15">
+<h1>Tools</h1>
+<br><br>
+<h1>Weapons</h1>
+</div>
+<div id="tab16">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/w4fW33I.png"/>
+</div>
+
+<div id="tab17">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/F7QSNWi.png"/>
+</div>
+<div id="tab18">
+Erena's Powers & Abilities
+</div>
+<div id="tab19">
+<h1>Racials</h1>
+<br><br>
+<h1>Magic</h1>
+</div>
+<div id="tab20">
+<img style="width:100%;height:100%;" src="https://i.imgur.com/oJAHNML.png"/>
 </div>
 
 <embed style="height: 0%; width: 0%;"src="Humility.mp3" autostart="true" loop="true">
